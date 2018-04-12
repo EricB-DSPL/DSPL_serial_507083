@@ -1,5 +1,5 @@
 
-cd /home/pi/Application/DSPL_serial_507083/
+cd /home/pi/Application/DSPL-serial/
 
 sudo chmod +x update.sh
 sudo chmod +x ARM_xbox_serial
