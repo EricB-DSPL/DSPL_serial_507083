@@ -318,7 +318,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkSpinButton" id="sbDevicePort1">
+                      <object class="GtkSpinButton" id="sbDevicePort">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="max_length">3</property>
@@ -370,7 +370,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkSpinButton" id="sbLightAddr1">
+                      <object class="GtkSpinButton" id="sbLightAddr">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="margin_top">15</property>
