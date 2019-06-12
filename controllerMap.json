@@ -7,8 +7,8 @@
       },
       "range16": {
         "limits": [
-          -1800,
-          1800
+          -2100,
+          2100
         ],
         "cmd": "!001:BSCH=0,8101040700FF",
         "convertToBinary": "FALSE",
