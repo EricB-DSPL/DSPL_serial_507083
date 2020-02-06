@@ -20,8 +20,8 @@
   </object>
   <object class="GtkAdjustment" id="adjStrobe_duration">
     <property name="lower">3</property>
-    <property name="upper">175</property>
-    <property name="step_increment">1</property>
+    <property name="upper">1000</property>
+    <property name="step_increment">10</property>
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adjStrobe_edge">
@@ -30,7 +30,7 @@
     <property name="page_increment">10</property>
   </object>
   <object class="GtkAdjustment" id="adjStrobe_mode">
-    <property name="upper">100</property>
+    <property name="upper">2</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
@@ -184,7 +184,6 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="label5">
-                    <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="halign">center</property>
                     <property name="valign">center</property>
@@ -221,13 +220,13 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="spinbutton1">
+                  <object class="GtkSpinButton" id="sbPulseMode">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="editable">False</property>
-                    <property name="input_purpose">alpha</property>
+                    <property name="input_purpose">digits</property>
                     <property name="orientation">vertical</property>
                     <property name="adjustment">adjStrobe_mode</property>
+                    <property name="climb_rate">1</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -238,10 +237,11 @@
                 </child>
                 <child>
                   <object class="GtkSpinButton" id="spinbutton2">
-                    <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="visibility">False</property>
                     <property name="orientation">vertical</property>
                     <property name="adjustment">adjStrobe_edge</property>
+                    <property name="climb_rate">1</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -251,11 +251,14 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="spinbutton3">
+                  <object class="GtkSpinButton" id="sbPulseDuration">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
+                    <property name="input_purpose">digits</property>
                     <property name="orientation">vertical</property>
                     <property name="adjustment">adjStrobe_duration</property>
+                    <property name="climb_rate">10</property>
+                    <property name="value">10</property>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -421,6 +424,7 @@
                     <child>
                       <object class="GtkButton" id="btnStrobeSync">
                         <property name="label" translatable="yes">Strobe Sync</property>
+                        <property name="height_request">60</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
