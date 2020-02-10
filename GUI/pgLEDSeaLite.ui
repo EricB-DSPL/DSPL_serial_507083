@@ -265,7 +265,7 @@
                           <object class="GtkButton" id="btnDualBeam_CHSW">
                             <property name="label" translatable="yes">Switch Channel
 Dual Beam</property>
-                            <property name="height_request">60</property>
+                            <property name="height_request">120</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
@@ -283,7 +283,7 @@ Dual Beam</property>
                         <child>
                           <object class="GtkButton" id="btnStrobeSync">
                             <property name="label" translatable="yes">Strobe Sync</property>
-                            <property name="height_request">60</property>
+                            <property name="height_request">120</property>
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="receives_default">True</property>
